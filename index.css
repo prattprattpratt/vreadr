@@ -1,0 +1,163 @@
+body {
+  font-family: 'Raleway' !important;
+}
+
+/*** Navigation ***/
+#my-nav {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    font-size: 18px;
+}
+
+    #my-nav > .nav-items {
+      display: flex;
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      justify-content: space-evenly;
+      align-items: center;
+      background: none;
+    }
+
+        #my-nav > .nav-items > li {
+          flex: 1;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+            #my-nav > .nav-items > li.active {
+                background-color: #57BBBF;
+            }
+
+    #my-nav a {
+        color: white;
+        transition: all .4s;
+        border-bottom: none;
+        text-decoration: none;
+    }
+
+        #my-nav a:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #57BBBF;
+            transition: width .3s;
+        }
+
+            #my-nav a:hover:after {
+                width: 100%;
+            }
+
+video#banner-vid {
+    width: 100%;
+}
+
+#jumbotron .button-homepage, #vook-section .button-homepage, #subscription-section .button-homepage {
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    font-size: 20px;
+    transition: all .3s;
+    border: solid 2px black;
+}
+
+    #jumbotron .button-homepage:hover, #vook-section .button-homepage:hover, #subscription-section .button-homepage:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+#jumbotron {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    #jumbotron > p {
+        font-size: 30px;
+    }
+
+    #jumbotron > h1 {
+        font-size: 140px;
+    }
+
+#vook-section {
+    display: flex;
+    width: 100%;
+}
+
+    #vook-section > #vook-info {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    #vook-section > #vook-image {
+        width: 50%;
+    }
+
+        #vook-section > #vook-image > img {
+            width: 100%;
+        }
+
+#subscription-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    background: url('/images/mountains.jpg');
+    background-size: cover;
+    background-position-y: -262px;
+}
+
+    #subscription-section > #subscription-options {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    #subscription-section .subscription-option {
+        width: 265px;
+        height: 375px;
+        background: rgba(255, 255, 255, 0.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+        #subscription-section .subscription-option img {
+            width: 100%;
+            margin-top: -20px;
+        }
+
+/*** Footer ***/
+#my-footer {
+    background-color: #57BBBF;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    #my-footer > #social-media-buttons {
+        font-size: 28px;
+    }
+
+        #my-footer > #social-media-buttons > a {
+            color: black;
+        }
