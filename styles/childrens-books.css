@@ -1,6 +1,5 @@
 body {
   font-family: 'Raleway' !important;
-  background: url('/images/library2.png') fixed;
 }
 
 /*** Navigation ***/
@@ -56,12 +55,14 @@ body {
 
 #jumbotron {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     top: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('/images/big/childrens-books.png');
+    background-size: cover;
 }
 
     #jumbotron-text p {
@@ -78,6 +79,15 @@ body {
         padding: 40px;
     }
 
+#books-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-color: #57BBBF;
+}
+
 #categories-section {
     display: flex;
     flex-wrap: wrap;
@@ -90,11 +100,12 @@ body {
     }
 
     #categories-section .category{
-        width: 400px;
+        width: 250px;
         height: 421px;
         background: rgba(255, 255, 255, 0.8);
         text-align: center;
-        margin: 20px;
+        padding: 20px;
+        border-right: solid 1px #57BBBF;
     }
 
         #categories-section .category img {

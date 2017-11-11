@@ -74,9 +74,8 @@ video#banner-vid {
 #jumbotron {
     position: absolute;
     width: 100%;
-    height: 100%;
     display: flex;
-    top: 0;
+    top: 13vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -119,7 +118,7 @@ video#banner-vid {
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
-    background: url('/images/mountains.jpg');
+    background: url('/images/mountains.png');
     background-size: cover;
     background-position-y: -262px;
 }
