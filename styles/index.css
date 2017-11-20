@@ -118,7 +118,7 @@ video#banner-vid {
     justify-content: space-evenly;
     width: 100%;
     height: 100vh;
-    background: url('/images/mountains.png');
+    background: url('/images/mountains.jpg');
     background-size: cover;
     background-position-y: -262px;
 }
